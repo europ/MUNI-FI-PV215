@@ -1,0 +1,182 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[left=2cm,text={17cm,24cm},top=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{accents}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{breakurl}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{supertabular}
+\usepackage[titles]{tocloft}
+
+\def\UrlBreaks{\do\/\do-} % URL breaking characters
+
+\newcommand{\red}[1]{\textcolor{red}{#1}} % \red{text in red}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} % \blue{text in blue}
+\newcommand{\TODO}{\textbf{\textcolor{red}{TODO}}} % red bold TODO
+\newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}} % command \tilda for '~' character
+
+\renewcommand{\cftdot}{}
+
+\setlength\parindent{0pt} % do NOT indent
+\graphicspath{{img/}} % path to images
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \Huge{
+            \textsc{
+                Faculty of Informatics\\
+                \hspace{25px}Masaryk University
+            }
+        }
+        \vspace{50px}
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[scale=3]{muni-fi-logo.pdf}
+        \end{figure}
+        \\[15mm]
+        \Huge{
+            \textbf{
+                PV215
+            }
+        }
+        \\[1.5mm]
+        \huge{
+            \textbf{
+                Management by Competencies
+            }
+        }
+        \\[2.5em]
+        \LARGE{
+            \textbf{
+                SWOT Analysis
+            }
+        }
+        \vfill
+    \end{center}
+        \Large{
+            Adrián Tóth (491322)\\
+            Dušan Litvík (487581)\\
+            Tadeáš Pavlík (487555)\\
+            David Vaďura (433378) \hfill \today
+        }
+
+\end{titlepage}
+
+\section*{SWOT Analysis}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{r|p{0.4\textwidth}|p{0.4\textwidth}}
+        & \multicolumn{1}{c|}{\textbf{\large{Positive}}} & \multicolumn{1}{c}{\textbf{\large{Negative}}}\\
+        \hline
+
+        \multirow{16}{*}[1em]{\textbf{\large{Internal}}}
+        &
+        \begin{center}
+            Strength
+        \end{center}
+        \begin{itemize}
+            \item family business
+            \item independent
+            \item automation
+        \end{itemize}
+        &
+        \begin{center}
+            Weaknesses
+        \end{center}
+        \begin{itemize}
+            \item semi automated
+            \item old machines
+            \item high costs of production
+            \item low production
+            \item advertising
+            \item missing secondary sources for wine production
+        \end{itemize}
+        \\
+        \hline
+
+        \multirow{14}{*}[1em]{\textbf{\large{External}}}
+        &
+        \begin{center}
+            Opportunities
+        \end{center}
+        \begin{itemize}
+            \item delivery service
+            \item e-shop / shop
+            \item international
+            \item certificate
+        \end{itemize}
+        &
+        \begin{center}
+            Threats
+        \end{center}
+        \begin{itemize}
+            \item climate change
+            \item natural disasters
+            \item temporary workers
+            \item regional only
+            \item vulnerable vineyard
+        \end{itemize}
+        \\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\newpage
+
+\section*{SWOT Strategies}
+
+\begin{center}
+    \begin{minipage}{0.95\textwidth}
+
+        \textbf{S-O-Strategy (Maxi Maxi)}
+        \begin{itemize}
+            \item donation investment into automation of the production process
+            \item product improvement by obtaining trademark or certification for their brand
+        \end{itemize}
+
+        \textbf{W-O-Strategy (Mini Maxi)}
+        \begin{itemize}
+            \item greater wine production may lead the company to be able to expand at global market
+            \item \TODO
+        \end{itemize}
+
+        \textbf{S-T-Strategy (Maxi Mini)}
+        \begin{itemize}
+            \item \TODO
+            \item \TODO
+        \end{itemize}
+
+        \textbf{W-T-Strategy (Mini Mini)}
+        \begin{itemize}
+            \item creating fully automated process will result in worker reduction and later, it will remove the problem of hiring temporary (season) workers
+            \item usage of other resources (excluding local, mainly external) will lead to processing not all of the local resources that implies a possibility to create local backup, what follows that they will be affected only slightly by the nature disasters
+        \end{itemize}
+
+    \end{minipage}
+\end{center}
+
+\end{document}

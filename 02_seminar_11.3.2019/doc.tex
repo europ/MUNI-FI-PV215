@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[left=2cm,text={17cm,24cm},top=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{accents}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{breakurl}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{supertabular}
+\usepackage[titles]{tocloft}
+
+\def\UrlBreaks{\do\/\do-} % URL breaking characters
+
+\newcommand{\red}[1]{\textcolor{red}{#1}} % \red{text in red}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} % \blue{text in blue}
+\newcommand{\TODO}{\textbf{\textcolor{red}{TODO}}} % red bold TODO
+\newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}} % command \tilda for '~' character
+
+\renewcommand{\cftdot}{}
+
+\setlength\parindent{0pt} % do NOT indent
+\graphicspath{{img/}} % path to images
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \Huge{
+            \textsc{
+                Faculty of Informatics\\
+                \hspace{25px}Masaryk University
+            }
+        }
+        \vspace{50px}
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[scale=3]{muni-fi-logo.pdf}
+        \end{figure}
+        \\[15mm]
+        \Huge{
+            \textbf{
+                PV215
+            }
+        }
+        \\[1.5mm]
+        \huge{
+            \textbf{
+                Management by Competencies
+            }
+        }
+        \\[2.5em]
+        \LARGE{
+            \textbf{
+                Company Culture
+            }
+        }
+        \vfill
+    \end{center}
+        \Large{
+            Adrián Tóth (491322) \hfill \today
+        }
+
+\end{titlepage}
+
+\setlength{\parskip}{0pt}
+    \hypersetup{hidelinks}\tableofcontents
+\setlength{\parskip}{0pt}
+
+\newpage
+
+\section{Company Culture}
+
+\textbf{Rituals}\\[-7.5mm]
+\begin{itemize}
+    \item parties\\[-7.5mm]
+    \item meetings\\[-7.5mm]
+    \item conferences\\[-7.5mm]
+    \item team buildings\\[-7.5mm]
+    \item open house days\\[-7.5mm]
+    \item technical trainings
+\end{itemize}
+
+\textbf{Symbols}\\[-7.5mm]
+\begin{itemize}
+    \item logo\\[-7.5mm]
+    \item color\\[-7.5mm]
+    \item merchandise
+\end{itemize}
+
+\textbf{Values}\\[-7.5mm]
+\begin{itemize}
+    \item motto\\[-7.5mm]
+    \item trust\\[-7.5mm]
+    \item freedom\\[-7.5mm]
+    \item respect\\[-7.5mm]
+    \item tolerance\\[-7.5mm]
+    \item knowledge\\[-7.5mm]
+    \item motivation\\[-7.5mm]
+    \item multiculturalism
+\end{itemize}
+
+\textbf{Heroes}\\[-7.5mm]
+\begin{itemize}
+    \item founders\\[-7.5mm]
+    \item senior workers\\[-7.5mm]
+    \item overtime workers
+\end{itemize}
+
+\section{Work Environment}
+
+\begin{itemize}
+    \item privacy, space, equipment etc. for happiness\\[-7.5mm]
+    \item good relations, atmosphere and fair management for efficient work\\[-7.5mm]
+    \item balance between open and private space\\[-7.5mm]
+    \begin{itemize}
+        \item communications with team colleges versus silent work place
+    \end{itemize}
+\end{itemize}
+
+\end{document}

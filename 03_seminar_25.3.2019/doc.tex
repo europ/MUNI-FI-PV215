@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[left=2cm,text={17cm,24cm},top=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{accents}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{breakurl}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{supertabular}
+\usepackage[titles]{tocloft}
+
+\def\UrlBreaks{\do\/\do-} % URL breaking characters
+
+\newcommand{\red}[1]{\textcolor{red}{#1}} % \red{text in red}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} % \blue{text in blue}
+\newcommand{\TODO}{\textbf{\textcolor{red}{TODO}}} % red bold TODO
+\newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}} % command \tilda for '~' character
+
+\renewcommand{\cftdot}{}
+
+\setlength\parindent{0pt} % do NOT indent
+\graphicspath{{img/}} % path to images
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+
+\begin{titlepage}
+
+    \begin{center}
+        % FIX: lines must end with '%', if not then it will result in an incorrect centering
+        \vfill {%
+            \Huge{%
+                \textsc{%
+                    Faculty of Informatics\\[3mm]%
+                    Masaryk University%
+                }%
+            }%
+        }%
+
+        \hfill\\[15mm]
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[scale=3]{muni-fi-logo.pdf}
+        \end{figure}
+
+        \hfill\\[10mm]
+
+        \Huge{
+            \textbf{
+                PV215
+            }
+        }
+
+        \hfill\\[-10mm]
+
+        \huge{
+            \textbf{
+                Management by Competencies
+            }
+        }
+
+        \hfill\\[10mm]
+
+        \LARGE{
+            \textbf{
+                Company Roles, Tasks, Posts \& Jobs
+            }
+        }
+        \vfill
+
+    \end{center}
+
+        \Large{
+            Jiří Čechák (445717)\\
+            Adrián Tóth (491322)\\
+            Tadeáš Pavlík (487555)\\
+            Václav Stehlík (487580) \hfill \today
+        }
+
+\end{titlepage}
+
+\setlength{\parskip}{0pt}
+    \hypersetup{hidelinks}\tableofcontents
+\setlength{\parskip}{0pt}
+
+\newpage
+
+\section{Roles, Tasks, Posts \& Jobs}
+
+\textbf{Roles}\\[-7.5mm]
+\begin{itemize}
+    \item worker\\[-7.5mm]
+    \item leader\\[-7.5mm]
+    \item manager
+\end{itemize}
+
+\textbf{Tasks}\\[-7.5mm]
+\begin{itemize}
+    \item sell\\[-7.5mm]
+    \item test\\[-7.5mm]
+    \item clean\\[-7.5mm]
+    \item deploy\\[-7.5mm]
+    \item deliver\\[-7.5mm]
+    \item finance\\[-7.5mm]
+    \item manage\\[-7.5mm]
+    \item support\\[-7.5mm]
+    \item develop\\[-7.5mm]
+    \item analyze\\[-7.5mm]
+    \item marketing\\[-7.5mm]
+    \item accounting\\[-7.5mm]
+    \item administration\\[-7.5mm]
+    \item provide security\\[-7.5mm]
+    \item human resources
+\end{itemize}
+
+\textbf{Jobs}\\[-7.5mm]
+\begin{itemize}
+    \item Owner\\[-7.5mm]
+    \item Tester\\[-7.5mm]
+    \item Analyzer\\[-7.5mm]
+    \item Developer\\[-7.5mm]
+    \item Supporter\\[-7.5mm]
+    \item Technician\\[-7.5mm]
+    \item Plan Manager\\[-7.5mm]
+    \item Project Manager\\[-7.5mm]
+    \item Product Manager\\[-7.5mm]
+    \item Strategy Manager\\[-7.5mm]
+    \item CSO (chief sales officer)\\[-7.5mm]
+    \item CFO (chief financial officer)\\[-7.5mm]
+    \item CTO (chief technical officer)\\[-7.5mm]
+    \item CEO (chief executive officer)\\[-7.5mm]
+    \item CMO (chief marketing officer)\\[-7.5mm]
+    \item COO (chief operations officer)\\[-7.5mm]
+    \item CHO (chief human resources officer)
+\end{itemize}
+
+\textbf{Posts}\\[-7.5mm]
+\begin{itemize}
+    \item CSO + CHO\\[-7.5mm]
+    \item CTO + COO\\[-7.5mm]
+    \item CFO + CMO\\[-7.5mm]
+    \item Owner + CEO\\[-7.5mm]
+    \item Tester + Developer\\[-7.5mm]
+    \item Analyzer + Developer\\[-7.5mm]
+    \item Technician + Supporter\\[-7.5mm]
+    \item Product Manager + Project Manager\\[-7.5mm]
+    \item Strategy Manager + Project Manager\\[-7.5mm]
+    \item Strategy Manager + Product Manager
+\end{itemize}
+
+\end{document}

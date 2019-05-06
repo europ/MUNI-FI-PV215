@@ -1,0 +1,131 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[left=2cm,text={17cm,24cm},top=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{accents}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{breakurl}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{supertabular}
+\usepackage[titles]{tocloft}
+
+\def\UrlBreaks{\do\/\do-} % URL breaking characters
+
+\newcommand{\red}[1]{\textcolor{red}{#1}} % \red{text in red}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} % \blue{text in blue}
+\newcommand{\TODO}{\textbf{\textcolor{red}{TODO}}} % red bold TODO
+\newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}} % command \tilda for '~' character
+
+\renewcommand{\cftdot}{}
+
+\setlength\parindent{0pt} % do NOT indent
+\graphicspath{{img/}} % path to images
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+
+\begin{titlepage}
+
+    \begin{center}
+        % FIX: lines must end with '%', if not then it will result in an incorrect centering
+        \vfill {%
+            \Huge{%
+                \textsc{%
+                    Faculty of Informatics\\[3mm]%
+                    Masaryk University%
+                }%
+            }%
+        }%
+
+        \hfill\\[15mm]
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[scale=3]{muni-fi-logo.pdf}
+        \end{figure}
+
+        \hfill\\[10mm]
+
+        \Huge{
+            \textbf{
+                PV215
+            }
+        }
+
+        \hfill\\[-10mm]
+
+        \huge{
+            \textbf{
+                Management by Competencies
+            }
+        }
+
+        \hfill\\[10mm]
+
+        \LARGE{
+            \textbf{
+                Strategic continuum
+            }
+        }
+        \vfill
+
+    \end{center}
+
+        \Large{
+            Adrián Tóth (491322)\\
+            Roman Nedelka (475972)\\
+            Branislav Kotrč (433718)\\
+            Ľubomír Gocník (433737)\hfill \today
+        }
+
+\end{titlepage}
+
+\setlength{\parskip}{0pt}
+    \hypersetup{hidelinks}\tableofcontents
+\setlength{\parskip}{0pt}
+
+\newpage
+
+\section{Company}
+
+We have chosen \textit{Red~Hat~Inc.} company that is an international company with approximately 13~thousand employees.
+
+\section{Business hypothesis}
+
+\begin{itemize}
+    \item based on open-source software development
+    \item profit from open-source software support requested by companies
+    \item huge amount of regular international large enterprise customers
+    \item combines content delivery with subscription management
+    \item developing trending needed technologies (cloud computing, virtualization technologies, linux)
+    \item open-source software (development, support)
+    \item hold and keep its leading position on the market
+\end{itemize}
+
+\section{Mission}
+
+\begin{itemize}
+    \item customers can focus on their business only
+    \item we provide the know how and support to the customers, so the customers do not have to deal with integration problems themselves
+\end{itemize}
+
+\end{document}

@@ -7,3 +7,8 @@
 3. [Company Roles, Tasks, Posts & Jobs (25.03.2019)](https://github.com/europ/MUNI-FI-PV215/blob/master/03_seminar_25.03.2019/doc.pdf)
 4. Myers-Briggs Type Indicator (08.04.2019)
 5. [Strategic continuum (06.05.2019)](https://github.com/europ/MUNI-FI-PV215/blob/master/05_seminar_06.05.2019/doc.pdf)
+6. [Strategic continuum (20.05.2019)](https://github.com/europ/MUNI-FI-PV215/blob/master/06_seminar_20.05.2019/pres.pdf)
+
+### Seminar work
+
+* [Seminar work](https://github.com/europ/MUNI-FI-PV215/blob/master/seminar_work/doc.pdf)

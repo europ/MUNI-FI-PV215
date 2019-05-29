@@ -1,0 +1,292 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[left=2cm,text={17cm,24cm},top=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{accents}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{breakurl}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{supertabular}
+\usepackage[titles]{tocloft}
+
+\def\UrlBreaks{\do\/\do-} % URL breaking characters
+
+\newcommand{\red}[1]{\textcolor{red}{#1}} % \red{text in red}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} % \blue{text in blue}
+\newcommand{\TODO}{\textbf{\textcolor{red}{TODO}}} % red bold TODO
+\newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}} % command \tilda for '~' character
+
+\renewcommand{\cftdot}{}
+
+\setlength\parindent{0pt} % do NOT indent
+\graphicspath{{img/}} % path to images
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+
+\newgeometry{left=2cm,right=2cm,top=3cm,bottom=3cm}
+
+\begin{titlepage}
+
+    \begin{center}
+        % FIX: lines must end with '%', if not then it will result in an incorrect centering
+        \vfill {%
+            \Huge{%
+                \textsc{%
+                    Faculty of Informatics\\[3mm]%
+                    Masaryk University%
+                }%
+            }%
+        }%
+
+        \hfill\\[15mm]
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[scale=3]{muni-fi-logo.pdf}
+        \end{figure}
+
+        \hfill\\[10mm]
+
+        \Huge{
+            \textbf{
+                PV215
+            }
+        }
+
+        \hfill\\[-10mm]
+
+        \huge{
+            \textbf{
+                Management by Competencies
+            }
+        }
+
+        \hfill\\[10mm]
+
+        \LARGE{
+            \textbf{
+                Strategic Frame of Red Hat, Inc.
+            }
+        }
+        \vfill
+
+    \end{center}
+
+        \Large{
+            Adrián Tóth (491322)\\
+            Branislav Kotrč (433718)\\
+            Roman Nedelka (475972)\\
+            Ľubomír Gocník (433737)\hfill \today
+        }
+
+\end{titlepage}
+
+\setlength{\parskip}{0pt}
+    \hypersetup{hidelinks}\tableofcontents
+\setlength{\parskip}{0pt}
+
+\newgeometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+
+\newpage
+
+\section{Pyramid of Vitality}
+
+    \subsection{Usefulness}
+    \begin{itemize}
+        \item we will try to bring innovation to IT business in terms of providing software products and reliable services (support, maintenance, advising etc.) to enterprises, so they don’t need to cope with the software issues on their own
+
+        \item therefore, our target group will mainly consist of (large) enterprises that don’t want to deal with the entire software development cycle themselves~--~it will be cheaper and more effective to use solutions provided by us
+
+        \item our products will keep up with the latest trends and technologies~--~we believe that this will help our target group to choose us rather than the competition
+    \end{itemize}
+
+    \subsection{Effectivity}
+    \begin{itemize}
+        \item first and foremost, there has to be efficient and experienced group of people at “higher” positions~--~we will try to employ people with a certain background in their fields as well as to invest to our employees in form of various training and educational programs
+
+        \item there will be some crucial indicators for us~--~position on the market, a percentage of new and lost customers, profit, number of current projects~--~these will be regularly analyzed in order to identify our weak spots and know which aspects to focus on
+
+        \item communication with customers will be extremely important for us, because we think that any problem is easier to be dealt with when communicating directly in real time
+
+        \item in order to avoid spending too much time learning “new stuff”, we will try to use as many proven and well known tools (programs, licences, procedures etc.) as possible
+    \end{itemize}
+
+    \subsection{Stability}
+    \begin{itemize}
+        \item knowing that giving feedback isn’t very popular, we will try to motivate our customers by offering them various feedback benefits
+
+        \item we will try to motivate our employees by team ratings~--~best teams will earn an appropriate reward (financial, extra holiday etc.)
+
+        \item we will try to create a friendly environment for employees so that no one is afraid to speak out loud if he/she doesn’t like something~--~doors of leaders will be always open
+
+        \item we will regularly analyze the outputs of testing and key indicators evaluations to keep the pace and ensure quick reactions to changes
+    \end{itemize}
+
+    \subsection{Dynamics}
+    \begin{itemize}
+        \item we will organize workshops, open houses and events for the public to get to know customers’ needs better and potentially to get inspirational ideas
+
+        \item we will continually have an eye on current technologies so we can predict their possible depreciation, look for suitable replacements in advance and thus save money and time
+
+        \item we will track new competitors to know which field to look out for and which field to try to strengthen our position on
+
+        \item our politics will be to be open to our employees’ creativity (ideas, suggestions etc.)
+    \end{itemize}
+
+\newpage
+
+\section{Pyramid of Culture (partial)}
+
+    \subsection{Definition}
+    \begin{itemize}
+        \item company history, values and principles are important
+
+        \item friendly environment~--~less stress and more motivated, able and willing working employees
+
+        \item bond the relationships between employees via teambuildings so they get to know each other better
+
+        \item qualified people for specific jobs
+
+        \item no underpaying our employees for profit
+    \end{itemize}
+
+    \subsection{Orientation}
+    \begin{itemize}
+        \item there will be teambuildings with the CEO or other people from the leading and managerial positions which will include talks about the company’s history, values, habits, moral principles...
+
+        \item presentations with a summary of the past year in terms of new relationships (customers, suppliers, vendors), image of the company (how the public’s opinion about us changed, prestige), some numbers (employees, customers, profit) and so on will be organized annually so the (new) employees get to know the company better
+
+        \item company’s structure, leading people, teams and departments will be introduced to new employees to get familiar with the company’s environment quickly from the beginning
+    \end{itemize}
+
+    \subsection{Motivation}
+    \begin{itemize}
+        \item when hiring new people, we will try to get as much information about their background, experience, needs and desires as possible in order to fit tasks to their needs the best way we can~--~there will be detailed conversation about these things with every incoming employee
+
+        \item we want our employees to stay loyal to the company and some of the most important means to achieve this will be above standard salary, extra holidays and flexible working hours including home office~--~as far as they do their jobs well and properly, rewards are very nice and generous
+
+        \item employees will regularly fill up questionnaires about their working environment (what they like or don’t like, if they are happy with their workload, if they are happy with the outcomes of their work etc.) and based on these, managers will be able to (re)fit task to their needs
+
+        \item we hope that the use of the latest and modern technologies and tools will satisfy the intellectual needs of our employees
+
+        \item we will try to encourage and motivate employees not to be afraid to come up with new ideas they find interesting~--~initiative people will have an opportunity of a career growth (more respect, prestige and rewards will come with the growth)
+    \end{itemize}
+
+\newpage
+
+\section{Strategic Frame}
+
+    \subsection{Business hypothesis}
+    \begin{itemize}
+        \item key idea is to provide “free” software~--~people like basically everything better when they think it’s for free~--~we will try to gain customers’ trust by providing them a quality and free solutions and then they will be keen to use our services related to these products
+
+        \item knowing that we already have a number of huge clients and there’s not many companies like us in the IT business in general, we will try to use this fact and quickly strengthen and hold our position on the market in both near and distant future
+
+        \item once we reach a certain level, power and prestige, we will try to collaborate with some of the “big players” like Apple, Microsoft, Google, Amazon etc.
+
+        \item once the technological and political factors allow it, we would like to expand to less known “IT worlds” such as Africa or some parts of Asia
+
+        \item we hope to be preferred choice also thanks to our focus on modern technologies such as cloud computing, smart devices or virtualization 
+    \end{itemize}
+
+    \subsection{Mission}
+    \begin{itemize}
+        \item our mission is to make the IT sector more friendly and pleasant for the companies operating on it by providing them products with good and reliable support
+
+        \item we want to unburden enterprises so they don’t need to cope with their own huge and complex software solutions which they don’t have any experience with
+
+        \item we will provide reliable solutions based on latest technologies, well-known procedures and past experience what will allow our customers to focus solely on their own business
+    \end{itemize}
+
+    \subsection{Vision}
+    \begin{itemize}
+        \item we want to have at least one branch in 90\% of countries in the world in the next 15 years
+
+        \item we hope to be among the 10 largest IT companies in the world with the highest annual revenue by the end of 2025
+
+        \item we will try not to lose more than 5\% of our customers (every year) and also to gain more customers than we lose in every country we will be operating in
+    \end{itemize}
+
+    \subsection{Strategy}
+    \begin{itemize}
+
+        \item present
+        \begin{itemize}
+            \item we would like to gain competitive advantage by offering new technologies as they come out
+
+            \item trying multiple ideas at once, dumping those that don't work, and doing all this as quickly as possible
+        \end{itemize}
+
+        \item future
+        \begin{itemize}
+            \item we hope to retain all our regular large enterprise customers and through great service to gain new in the future (focus on large companies)
+
+            \item since Linux OS is expanding in recent years, we will strongly focus on this area
+
+            \item we will try to build huge and complex cloud infrastructure and create cloud-native apps with strong focus on automation
+        \end{itemize}
+    \end{itemize}
+
+    \subsection{Values and Rules}
+    \begin{itemize}
+        \item we believe that openness to new ideas and acceptance of people’s opinions are fundamental factors for the company’s success
+
+        \item our most important rule leading to achieve the vision is to evaluate the key indicators in great detail~--~it will be regularly done in properly designed phases and every single step of the evaluation will be supervised and controlled
+
+        \item we believe in values such as:
+        \begin{itemize}
+            \item freedom, courage, commitment, accountability~--~all lived in balance
+
+            \item trusted multicultural company worldwide
+
+            \item being open source~--~free and available product to anybody
+        \end{itemize}
+
+        \item our basic rules are:
+        \begin{itemize}
+            \item always check new technologies, never lag behind others
+
+            \item always be competitive with our rivals in the field (price, services, ...)
+
+            \item keep strategic direction of Red Hat to ground workers, because they are the ones who deeply understand our customers’ challenges
+        \end{itemize}
+    \end{itemize}
+
+\newpage
+
+\section{Team Evaluation}
+
+Our team was working together collaboratively on which basis the points were distributed evenly.
+
+\begin{center}
+    \begin{tabular}{l|c|c}
+        Name            & UČO    & Points \\
+        \hline
+        Adrián Tóth     & 491322 & 25\%   \\
+        Branislav Kotrč & 433718 & 25\%   \\
+        Roman Nedelka   & 475972 & 25\%   \\
+        Ľubomír Gocník  & 433737 & 25\%   \\
+    \end{tabular}
+\end{center}
+
+\end{document}
